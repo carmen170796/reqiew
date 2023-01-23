@@ -1,0 +1,36 @@
+.dashboard-container{
+    text-align: center;
+    padding:2rem 4rem;
+}
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr ;
+    grid-template-rows: 0.3fr 0.7fr ;
+    width: 100%;
+    height: 100%;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    text-align: left;
+    
+}
+
+.premium-container{
+    background-color: hsl(200, 100%, 88%);
+    grid-column:1 ;
+    grid-row: 1;
+    border-radius: 30px;
+    padding: 1rem ;
+}
+
+.reviews-container{
+    grid-column:1 ;
+    grid-row: 2 ;
+}
+
+.ratings-container{
+    grid-column:2 ;
+    grid-row: 1 /span 2;
+}
+

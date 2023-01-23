@@ -1,0 +1,11 @@
+<div class="chart-container">
+    <h3>Sentiment by aspect</h3>
+    <p>Average sentiment by aspect</p>
+    <canvas class="chart" baseChart
+        [datasets]="radarChartDatasets"
+        [options]="radarChartOptions"
+        [labels]="radarChartLabels"
+        [type]="'radar'">
+    </canvas>
+</div>
+

@@ -1,0 +1,73 @@
+
+<mat-sidenav-container class="container">
+    <mat-sidenav #sidenav mode="side" opened class="sidenav">
+        <app-side-bar></app-side-bar>  
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class='filter-container'>
+            <div>
+                <h4>Device Type</h4>
+                <mat-form-field appearance="fill" >
+                    <mat-label>Device</mat-label>
+                    <mat-select  id='device'>
+                        <mat-option *ngFor="let device of devices" [value]="device.value" >
+                  {{device.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            
+            <div>
+                <h4>Brand</h4>
+                <mat-form-field appearance="fill">
+                <mat-label>Brand</mat-label>
+                <mat-select id='brand' >
+                    <mat-option *ngFor="let brand of brands" [value]="brand.value">
+              {{brand.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            </div>
+        
+            <div>
+                <h4>Model</h4>
+                <mat-form-field appearance="fill">
+                    <mat-label>Model</mat-label>
+                    <mat-select id='model' >
+                        <mat-option *ngFor="let model of models" [value]="model.value">
+                  {{model.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <h4>Date</h4>
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter a date range</mat-label>
+                    <mat-date-range-input [rangePicker]="picker">
+                      <input matStartDate placeholder="Start date" id='startDate'  >
+                      <input matEndDate placeholder="End date" id='endDate'>
+                    </mat-date-range-input>
+                    <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-date-range-picker #picker></mat-date-range-picker>
+                  </mat-form-field>          
+            </div>   
+            <div>
+                <h4>Price</h4>
+                    <mat-slider
+                        [max]=100
+                        [min]=0
+                        [step]=1
+                        [discrete]=true
+                        [showTickMarks]=false>
+                        <input matSliderStartThumb id='startPrice' >
+                        <input matSliderEndThumb  id='endPrice'>
+                    </mat-slider>
+            </div>
+
+            <button mat-button class="clear-button"> Clear filters</button>
+        </div>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

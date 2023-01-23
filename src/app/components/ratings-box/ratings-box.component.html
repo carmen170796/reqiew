@@ -1,0 +1,8 @@
+<div class="ratings-box">
+    <div *ngFor="let rating of ratings" class="item-rating" [ngClass]="rating.score > 0.7 ? 'goodScore' : 'badScore'">
+        <h3>{{rating.name}}</h3>
+        <p>Score out of 100</p>
+        <span>{{rating.score | percent:'2.0-0'}}</span>
+    </div>
+</div>
+

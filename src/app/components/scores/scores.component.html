@@ -1,0 +1,13 @@
+<div class='dashboard-container'>
+    <h2>Aspect-based Sentiment: {{productName}}</h2>
+    <p>{{filteredResults}}</p>
+    <div class="main-container">
+        <div class="premium-container">
+            <h3>Pro Version On</h3>
+                <p>You have access to all functions</p>
+            <h3> Edit Subscription </h3>
+        </div>
+        <app-reviews-view class="reviews-container" [reviews]="reviews"></app-reviews-view>
+        <app-ratings-box class="ratings-container" [ratings]="ratings"></app-ratings-box>
+    </div>
+</div>

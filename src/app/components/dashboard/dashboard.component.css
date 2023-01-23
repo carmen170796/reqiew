@@ -1,0 +1,43 @@
+.container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+}
+
+.sidenav {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-color: #000018;
+    height: 100vh;
+  }
+
+.filter-container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+}
+.clear-button{
+    height: fit-content;
+    margin-top: 4rem;
+    padding: 0.75rem;
+    border-radius: 10px;
+    background-color: #582e83;
+    color: white;
+    text-align: center;
+    border:none;
+    font-size: 1rem; 
+}
+
+.clear-button:hover {
+    background-color: #40225d;
+    color: pointer;
+  }

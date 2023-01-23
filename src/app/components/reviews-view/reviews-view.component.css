@@ -1,0 +1,12 @@
+.reviews-box{
+    background-color: #ffffea;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.review-container{
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem ;
+}
+

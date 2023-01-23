@@ -1,0 +1,29 @@
+.ratings-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    height: 100%;
+    padding: 0 2rem;
+}
+
+
+.item-rating{
+    background: white;
+    border-radius: 30px;
+    padding: 0.5rem 0 0.5rem 2rem;
+
+}
+.goodScore{
+    background-color: #e0efc4 ;
+}
+
+.badScore{
+    background-color: #ffc5bd;
+}
+
+span{
+    font-size: 2rem;
+    font-weight: bold;
+}

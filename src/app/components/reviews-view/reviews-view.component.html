@@ -1,0 +1,10 @@
+<div class="reviews-box">
+    <h3>Reliable Reviews</h3>
+    <p>Anti-spam filtered reviews</p>
+    <div *ngFor="let review of reviews" class="review-container">
+        <p>{{review.grade}}/5</p>
+        <mat-progress-bar mode="determinate" [value]="review.percent*100"></mat-progress-bar>
+        <p>{{review.amount}}</p>
+        <p>Reviews</p>
+    </div>
+</div>
