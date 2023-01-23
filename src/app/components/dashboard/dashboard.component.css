@@ -19,8 +19,8 @@
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    width: 100%;
 }
+
 .button-container{
     display: flex;
     align-items: center;
